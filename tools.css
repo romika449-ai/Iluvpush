@@ -1,0 +1,899 @@
+@import '/assets/css/theme.css';
+@import '/assets/css/plugins.css';
+@import '/assets/css/shared/layout.css';
+@import '/assets/css/shared/navbar.css';
+@import '/assets/css/shared/navbar.new.css';
+@import '/assets/css/shared/footer.css';
+@import '/assets/css/shared/feature_list.css';
+@import '/assets/css/shared/feature_showcase.css';
+@import '/assets/css/shared/layout_landing.css';
+@import '/assets/css/shared/landing_pricing.css';
+@import '/assets/css/shared/landing_faq.css';
+@import '/assets/css/shared/landing_testimonial.css';
+@import '/assets/css/shared/landing_cta.css';
+@import '/assets/css/shared/destinations_list.css';
+@import './responsive.css';
+.content_wrap_player_wrap {
+    width: 100%;
+    flex-direction: column;
+}
+
+.form-grp {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0.11rem;
+}
+
+.form-grp .form-input {
+    position: relative;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 7px 20px;
+    border-radius: 8px 0 0 8px;
+    /* color: #ffffff !important; */
+    /* background-color: var(--bg-color-cta-btn); */
+    border: none;
+    width: 48%;
+}
+
+.form-grp .form-btn {
+    position: relative;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 7px 30px;
+    border-radius: 0 8px 8px 0;
+    color: #ffffff !important;
+    background-color: var(--bg-color-cta-btn);
+    cursor: pointer;
+    border: none;
+    overflow: hidden;
+    background: var(--bg-btn);
+    border-bottom: none;
+}
+
+a.form-btn:hover {
+    text-decoration: none;
+}
+
+.form-grp .form-input-alt {
+    position: relative;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 7px 21px;
+    cursor: text;
+    overflow: hidden;
+    border-radius: 8px;
+    background: transparent;
+    color: #ffffff !important;
+    border: 1px solid #7b7b7b;
+    margin-right: 0.66rem;
+    width: 275px;
+    max-width: 100%;
+    opacity: 0.66;
+}
+
+.form-grp .form-input-alt:hover {
+    opacity: 1;
+}
+
+.form-btn.form-btn-alt {
+    padding-left: 1.33rem;
+    padding-right: 1.33rem;
+    border-radius: 8px !important;
+    background: transparent;
+    border: 1px solid#536dff;
+    color: #536dff !important;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.form-btn.form-btn-alt:hover {
+    color: #fff !important;
+    background-color: #536dff !important;
+}
+
+.form-btn.btn-type {
+    opacity: 0.5;
+    border-radius: 8px;
+    background: transparent;
+    border: 1px solid #7b7b7b;
+    margin-right: 1rem;
+}
+
+.form-btn.btn-type:hover,
+.form-btn.btn-type.active {
+    opacity: 1;
+    /* background-color: #383a50; */
+    border-color: #536dff;
+    color: #536dff !important;
+    font-weight: 600;
+}
+
+.form-btn.btn-type.active {
+    cursor: default;
+}
+
+.form-btn.btn-type-tab {
+    border-radius: 0;
+    margin-right: 0;
+    border-width: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-weight: 500;
+    opacity: 0.77;
+}
+
+.form-btn.btn-type-tab.active {
+    border-bottom-width: 2px;
+    font-weight: 600;
+}
+
+.form-btn.form-btn-disabled {
+    opacity: 0.66;
+    cursor: not-allowed;
+}
+
+.form-btn.form-btn-disabled:hover {
+    background-color: transparent !important;
+    color: #536dff !important;
+}
+
+#extname {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* .player-wrap {
+  margin-top: 2rem;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  overflow: hidden;
+} */
+
+/* .player-wrap .theoplayer-container,
+.player-wrap #video {
+  min-width: 640px;
+  min-width: 320px;
+  background-color: #000;
+} */
+
+.player {
+    width: 60%;
+    height: 420px;
+    background-color: rgb(61 66 92);
+    border-radius: 8px;
+}
+
+.header-title-section {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* min-height: 200px; */
+    width: 100%;
+}
+
+.header-title {
+    font-size: 2.75rem;
+}
+
+.section_wrap {
+    /* min-height: 100%; */
+    justify-content: center;
+    background-size: 100% auto;
+}
+
+.section_wrap_bg_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(17 2 25 / 91%);
+}
+
+.section_wrap:nth-of-type(2) {
+    /* background-image: url(../images/sols/game-streaming-bg.webp); */
+}
+
+body[data-solution='worship'] .section_wrap.section_wrap_head {
+    /* background-image: url(../images/sols/church-streaming-bg.webp); */
+}
+
+body[data-solution='live_tv'] .section_wrap.section_wrap_head {
+    /* background-image: url(../images/sols/live-tv-streaming-bg.webp); */
+}
+
+.section_wrap:nth-of-type(2) .content_wrap_feature_wrap {
+    padding-right: 0;
+}
+
+.section_wrap~.section_wrap {
+    /* min-height: 75%; */
+    justify-content: center;
+}
+
+/* .header-title {
+  font-family: var(--font-heading);
+  font-size: 3.75rem;
+  line-height: 1.2;
+  font-weight: 600;
+  padding-bottom: 18px;
+  color: var(--color-app-primary);
+  letter-spacing: -1px;
+} */
+
+.section_layout_feature .titles_wrap {
+    max-width: 50%;
+    padding: 0 3rem 0 2rem;
+}
+
+.section_layout_feature .titles_wrap:first-of-type {
+    padding-left: 4rem;
+    padding-right: 0;
+}
+
+.section_layout_vertical .titles_wrap {
+    max-width: 90% !important;
+    text-align: center;
+}
+
+.section_wrap_dest_list .titles_wrap {
+    max-width: unset !important;
+    padding-right: 0;
+}
+
+.section_wrap .titles_wrap .title_alt {
+    font-size: 29px;
+    font-weight: 400;
+}
+
+.section_wrap .titles_wrap .desc {
+    width: 100%;
+    text-align: left;
+}
+
+.section_wrap_dest_list .titles_wrap .desc,
+.section_layout_vertical .titles_wrap .desc {
+    text-align: center !important;
+}
+
+/* 3. HEADER */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* height: 100%; */
+    padding: 60px 0 0 0;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border-bottom: 1px solid var(--border-color-prod-compare-wrap); */
+}
+
+.header.fold1 {
+    background: var(--bg-layout);
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header-img-section {
+    overflow: hidden;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.header-img-section img {
+    width: 85%;
+    margin-bottom: -100px;
+    transition: all 0.2s linear;
+}
+
+.header-img-section img:hover {
+    margin-bottom: unset;
+}
+
+/* .header-title {
+  font-family: var(--font-heading);
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1;
+  padding-bottom: 18px;
+  color: var(--color-app-primary);
+  letter-spacing: -3px;
+} */
+
+.header-title .hero-content {
+    position: relative;
+    display: inline-block;
+}
+
+.header-title .hero-content::before {
+    display: none;
+    content: '';
+    background-color: #aaaaff;
+    opacity: 0.6;
+    width: 100%;
+    height: 8px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 4px;
+}
+
+.header-title.sub-hero-content {
+    font-size: 3.4rem;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+
+.highlight,
+.header-title-section .highlight,
+.header-title .highlight {
+    color: var(--color-app-highlight);
+}
+
+.header-title-text {
+    font-family: var(--font-feat-heading);
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 1.5;
+    padding-bottom: 15px;
+    color: var(--color-app-primary);
+    opacity: 0.9;
+}
+
+.header-title-section .sub-hero-content-alt {
+    line-height: 1;
+    padding-bottom: 25px;
+    color: var(--color-app-primary);
+    font-size: 23.5px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+.header-title-section .learn-more-btn-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.hero-section {
+    padding: 7% 0;
+}
+
+.hero-section .hero-img-section {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-section .header-img-section img {
+    margin-top: 0;
+    width: 100%;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 57%), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+@media screen and (max-width: 991.98px) {
+    .header-container {
+        flex-direction: column;
+    }
+    .header-title-section {
+        text-align: center;
+        margin-top: 40px;
+    }
+    .learn-more-btn-section {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 799.98px) {
+    .header {
+        height: auto;
+        padding-top: 20%;
+    }
+}
+
+@media screen and (max-width: 499.98px) {
+    .header {
+        padding-top: 30%;
+    }
+    .header-subtitle {
+        font-size: 24px;
+    }
+    .header-title {
+        font-size: 36px;
+        line-height: 1.2 !important;
+    }
+    .header-title-text {
+        font-size: 18px;
+    }
+}
+
+.section_layout.section_layout_feature {
+    flex-direction: row;
+    align-items: center;
+}
+
+.section_layout.section_layout_vertical {
+    flex-direction: column !important;
+    padding-top: 0;
+}
+
+.content_wrap.content_wrap_prod_compare_wrap {
+    margin-top: 4%;
+    border-top: 1px solid var(--border-color-prod-compare-wrap);
+}
+
+.content_wrap .prod_compare_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.prod_compare_item:hover .prod_compare_item_mask {
+    background-color: var(--bg-color-prod-compare-item-hover-mask);
+}
+
+.prod_compare_item .prod_compare_item_mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color-prod-compare-item-mask);
+    pointer-events: none;
+}
+
+.prod_compare_item .titles_wrap {
+    max-width: 500px;
+    z-index: 1;
+}
+
+.content_wrap .prod_compare_divider {
+    width: 1px;
+    height: 100%;
+    background-color: var(--border-color-prod-compare-wrap);
+}
+
+.section_wrap .titles_wrap_kb_wrap {
+    background-image: url(/assets/images/keep_productive.svg);
+    background-position: center right;
+    background-size: 30% auto;
+    background-repeat: no-repeat;
+}
+
+.content_wrap.content_wrap_kb_wrap {
+    margin-top: 6%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.content_wrap_kb_wrap .kb_feat {
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+    flex: 1;
+}
+
+.kb_feat .kb_feat_head {
+    font-size: 1.3em;
+    font-weight: 500;
+    text-align: center;
+    border: 1px solid;
+    padding: 18px;
+    border-radius: 8px;
+}
+
+.kb_feat .kb_feat_body {
+    margin-top: 1rem;
+    display: none;
+}
+
+/* service kb -- ends */
+
+.section_layout.section_layout_pricing_alt {
+    padding: 3rem 0 !important;
+    flex-direction: row !important;
+    align-items: center;
+}
+
+.section_layout.section_layout_pricing_alt .titles_wrap {
+    padding-left: 4rem;
+}
+
+.content_wrap.content_wrap_feature_wrap {
+    padding: 0 60px 0 0;
+    position: relative;
+    align-self: stretch;
+}
+
+.content_wrap.content_wrap_feature_wrap.right {
+    /* padding: 0 0 0 60px; */
+    padding: 0 0 0 0;
+}
+
+.snap_preview_wrap {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 0 3px 47px rgba(0, 0, 0, 0.15);
+    background-repeat: no-repeat;
+    /* border: 3px solid #e6bb19; */
+}
+
+.snap_preview_wrap.dests_list {
+    background-image: url(/assets/images/app_previews/destination-list.jpg);
+    background-size: 158% auto;
+    background-position: 52%;
+}
+
+.snap_preview_wrap.custom_rtmp {
+    background-image: url(/assets/images/app_previews/custom-rtmp.jpg);
+    background-size: 231% auto;
+    background-position: 20% 55%;
+}
+
+.snap_preview_wrap.events_list {
+    background-image: url(/assets/images/app_previews/events-list.jpg);
+    background-size: 130% auto;
+    background-position: 35% 37%;
+}
+
+.snap_preview_wrap.advanced_scheduling {
+    background-image: url(/assets/images/app_previews/advanced-scheduling.jpg);
+    background-size: 167% auto;
+    background-position: 35% 30%;
+    height: 400px;
+}
+
+.snap_preview_wrap.mp4-livestream {
+    /* background-image: url(/assets/images/app_previews/mp4-to-livestream.jpg);
+  background-size: 143% auto;
+  background-position: 72% 37%;
+  height: 314px; */
+    background-image: url(/assets/images/app_previews/mp4-to-livestream.png);
+    background-size: auto 100%;
+    background-position: 0 37%;
+    height: 500px;
+}
+
+.snap_preview_wrap.merge-mp4-livestream {
+    background-image: url(/assets/images/app_previews/merge-mp4-livestream.png);
+    /* background-size: 100% auto; */
+    /* background-position: 0 37%; */
+    background-size: auto 330px;
+    background-position: center;
+    height: 450px;
+}
+
+/* .snap_preview_wrap.clou_rec {
+  background-image: url(/assets/images/app_previews/cloud-recording.png);
+  background-size: 143% auto;
+  background-position: 72% 37%;
+  height: 425px;
+} */
+
+.snap_preview_wrap.game_streaming {
+    background-image: url(/assets/images/sols/game-streaming.webp);
+    background-size: auto 100%;
+    background-position: center;
+    height: 700px;
+}
+
+.snap_preview_wrap.church_streaming {
+    background-image: url(/assets/images/sols/church-streaming.webp);
+    background-size: auto 400px;
+    background-position: center;
+    height: 425px;
+}
+
+.snap_preview_img.church_streaming {
+    width: 70%;
+}
+
+.snap_preview_wrap.livetv_streaming {
+    background-image: url(../images/sols/livetv-streaming.webp);
+    background-size: 100% auto;
+    background-position: center;
+    height: 525px;
+}
+
+.snap_preview_img.livetv_streaming {
+    width: 80%;
+}
+
+.snap_preview_wrap.church_embed_player {
+    background-image: url(/assets/images/sols/church-embed-player.webp);
+    background-size: 100% auto;
+    background-position: center;
+    /* height: 525px; */
+    width: 500px;
+}
+
+.snap_preview_wrap.livetv_embed_player {
+    /* background-image: url(/assets/images/sols/livetv-embed-player-alt.webp);
+  background-size: auto 100%;
+  background-position: center;
+  height: 525px; */
+    background-image: url(/assets/images/feature_showcase/html5-web-player.webp);
+    background-size: auto 100%;
+    background-position: center;
+    height: 350px;
+}
+
+.snap_preview_wrap.church_cloud_rec {
+    /* background-image: url(../images/sols/church-cloud-recordings.webp);
+  background-size: auto 100%;
+  background-position: center;
+  height: 430px; */
+    background-image: url(../images/sols/church-pre-recorded-live.png);
+    background-size: auto 100%;
+    background-position: center;
+    height: 430px;
+}
+
+.snap_preview_wrap.livetv_cloud_rec {
+    /* background-image: url(../images/sols/livetv-cloud-recordings.webp);
+  background-size: auto 100%;
+  background-position: center;
+  height: 425px; */
+    background-image: url(../images/feature_showcase/livestream-mp4-videos.png);
+    background-size: auto 100%;
+    background-position: center;
+    height: 425px;
+}
+
+.snap_preview_wrap.clou_rec {
+    background-image: url(/assets/images/app_previews/cloud-recording-alt.png);
+    background-size: auto 100%;
+    /* background-position: 72% 37%; */
+    height: 450px;
+}
+
+.snap_preview_wrap.clou_rec_livestream {
+    background-image: url(/assets/images/app_previews/recording-livestreaming.png);
+    background-size: auto 100%;
+    background-position: center left;
+    height: 475px;
+}
+
+.snap_preview_wrap.realtime-monitor {
+    /* background-image: url(/assets/images/app_previews/realtime-monitoring.png);
+  background-size: auto 100%;
+  background-position: 72% 37%;
+  height: 354px; */
+    background-image: url(/assets/images/app_previews/realtime-monitoring-alt.png);
+    background-size: 111% auto;
+    background-position: 0 -31px;
+    height: 354px;
+}
+
+.snap_preview_wrap.publish-monitor {
+    background-image: url(/assets/images/app_previews/publish-monitoring.png);
+    background-size: 100% auto;
+    background-position: 0 -12px;
+    height: 450px;
+}
+
+.snap_preview_wrap.session-monitor {
+    /* background-image: url(/assets/images/app_previews/session-monitoring.png); */
+    background-image: url(/assets/images/app_previews/session-monitoring-alt.png);
+    background-size: 100% auto;
+    background-position: 0 0;
+    height: 454px;
+}
+
+.snap_preview_wrap.teams_invite {
+    background-image: url(/assets/images/app_previews/team_support.svg);
+    background-size: auto 100%;
+    background-position: center;
+    height: 320px;
+}
+
+.snap_preview_wrap.teams_members_roles {
+    background-image: url(/assets/images/app_previews/team_members_roles-alt.svg);
+    background-size: 80% auto;
+    background-position: center;
+    height: 375px;
+}
+
+.snap_preview_wrap.facebook_titles_assign {
+    background-image: url(/assets/images/app_previews/facebook-titles-assign.jpg);
+    background-size: 150% auto;
+    background-position: center -150px;
+    height: 400px;
+}
+
+.snap_preview_wrap.titles {
+    background-image: url(/assets/images/app_previews/titles.png);
+    background-size: 100% auto;
+    background-position: center;
+    height: 600px;
+}
+
+.snap_preview_wrap.multi-chat {
+    background-image: url(/assets/images/app_previews/multi-chat.png);
+    background-size: auto 100%;
+    background-position: center;
+    height: 500px;
+}
+
+.snap_preview_wrap.chat-viewers {
+    background-image: url(../images/sols/multi-chat-overlays.webp);
+    background-size: auto 100%;
+    background-position: center;
+    height: 330px;
+}
+
+/*@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: portrait)*/
+
+@media (max-width: 600px) and (orientation: portrait) {
+    .form-grp .form-input {
+        width: 80%;
+    }
+    .form-grp #extname {
+        display: none;
+    }
+    .header-title-section {
+        margin-top: 0;
+    }
+    .content_wrap .multistream-flow {
+        width: 100% !important;
+        height: auto !important;
+    }
+    .section_wrap .section_layout.section_layout_feature {
+        flex-direction: column !important;
+        /* align-items: flex-start !important; */
+        align-items: center !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    .section_wrap:nth-child(even) .section_layout.section_layout_feature {
+        flex-direction: column !important;
+    }
+    .content_wrap_feature_wrap {
+        margin-top: 30px;
+        flex: unset;
+        height: 300px;
+    }
+    .snap_preview_img.church_streaming,
+    .snap_preview_img.livetv_streaming {
+        width: 100%;
+    }
+    .section_layout_feature .titles_wrap {
+        max-width: unset !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .section_layout_feature .titles_wrap .title_main {
+        font-size: 2rem !important;
+    }
+    .content_wrap_feature_wrap {
+        padding-right: 0 !important;
+    }
+    .snap_preview_wrap.chat-viewers {
+        background-size: 100% auto !important;
+    }
+    .section_layout.section_layout_pricing_alt {
+        flex-direction: column !important;
+    }
+    .section_layout_pricing_alt .titles_wrap {
+        padding: 0 20px !important;
+    }
+    .pricing-card {
+        max-width: unset !important;
+    }
+    .content_wrap.content_wrap_feature_wrap.right {
+        padding-left: 0 !important;
+    }
+    .snap_preview_wrap.livetv_cloud_rec,
+    .snap_preview_wrap.clou_rec_livestream {
+        background-position: center center;
+        height: 300px;
+        background-size: 100% auto;
+    }
+    .snap_preview_wrap.merge-mp4-livestream {
+        background-size: 90% auto;
+        height: 250px;
+    }
+    .snap_preview_wrap.church_embed_player {
+        width: 90%;
+        height: 300px
+    }
+    .snap_preview_wrap.church_cloud_rec {
+        height: 300px;
+        background-size: 90% auto;
+    }
+    .snap_preview_wrap.chat-viewers {
+        height: 260px;
+        background-size: 90% auto !important;
+    }
+    .snap_preview_wrap.livetv_embed_player {
+        height: 275px;
+        /* background-position-x: left; */
+    }
+    .snap_preview_wrap.teams_invite {
+        height: 250px;
+        background-size: auto 80%;
+    }
+}
+
+/* For Landscopa - Laptop view (medium) */
+
+@media only screen and (min-width: 820px) and (max-width: 1460px) {
+    .section_layout.section_layout_vertical {
+        padding-top: 0;
+    }
+    .header.section_wrap .titles_wrap .title_main {
+        font-size: 2.8rem;
+    }
+    .header-title-section {
+        /* min-height: 280px; */
+        justify-content: center;
+        align-items: center;
+    }
+    .header-title {
+        max-width: 80%;
+        font-size: 3.2rem;
+        line-height: 3.75rem;
+    }
+    .header.header-alt .header-title {
+        font-size: 2.4rem;
+        max-width: 61%;
+        line-height: 3rem;
+    }
+    .header-title-text {
+        font-size: 1.1rem;
+        padding-bottom: 5px;
+    }
+    .section_wrap .titles_wrap .title_main {
+        font-size: 2.4rem;
+        line-height: 2.6rem;
+    }
+    .content_wrap.content_wrap_feature_wrap {
+        padding-right: 0;
+    }
+    .snap_preview_wrap.livetv_cloud_rec,
+    .snap_preview_wrap.clou_rec_livestream {
+        background-position: center center;
+        height: 375px;
+    }
+    .snap_preview_wrap.merge-mp4-livestream {
+        background-size: auto 290px;
+        height: 400px;
+    }
+    .snap_preview_wrap.church_embed_player {
+        width: 400px;
+    }
+    .snap_preview_wrap.church_cloud_rec {
+        height: 350px;
+    }
+    .snap_preview_wrap.chat-viewers {
+        height: 280px;
+    }
+    .snap_preview_wrap.livetv_embed_player {
+        height: 275px;
+        /* background-position-x: left; */
+    }
+    .snap_preview_wrap.teams_invite {
+        height: 275px;
+    }
+}

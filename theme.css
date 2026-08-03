@@ -1,0 +1,125 @@
+:root {
+    --bg-color-scrollbar-thumb: rgb(64 52 73);
+    --font-heading: 'Inter', sans-serif;
+    --font-heading-alt: 'Inter';
+    /* --font-heading-alt: 'TeX Gyre Adventor'; */
+    /* --font-heading-alt: 'TeXGyreAdventor', sans-serif; */
+    --font-heading-alt: 'Inter';
+    --font-feat-heading: 'Inter';
+    /* --bg-color-app: #110219; */
+    --bg-color-app: #13141c;
+    /* --bg-color-app: #0F2027; */
+    /* --bg-layout: linear-gradient(to top, #0c0c0c, #171515); */
+    --bg-layout: linear-gradient(to top, #0c0c0c, #110f0f);
+    /* --bg-color-navbar-sticky: #100e0f; */
+    /* --bg-color-navbar-sticky: rgb(16 14 15 / 90%); */
+    /* --bg-color-navbar-sticky: rgb(17 2 25 / 90%); */
+    --bg-color-navbar-sticky: rgb(19 20 28 / 93%);
+    --color-navbar-link: #f7f7f7;
+    /* --bg-color-footer: #1b0627; */
+    /* --bg-color-footer-alt: #210a2d; */
+    /* --bg-color-footer: #1a1a25; */
+    --bg-color-footer: #171720;
+    --bg-color-footer-alt: #1a1a25;
+    --color-app-primary: #f7f7f7;
+    --color-app-highlight: #ffc30f;
+    /* --bg-color-btn: #445de2; */
+    /* --bg-color-btn: #3ba21f; */
+    /* --bg-color-btn: #1aa756; */
+    --bg-color-btn: #0F9347;
+    /* --bg-btn: linear-gradient(0deg, #3d53d3 0%, #445de2 100%); */
+    --bg-btn: #445de2;
+    /* --bg-btn: #007bff; */
+    /* --bg-btn: linear-gradient(0deg, #235a00 0%, #368f00 100%); */
+    /* --bg-btn: linear-gradient(357deg, #01750d 0%, #4eb125 74%); */
+    /* --bg-btn: linear-gradient(357deg, #01750d 0%, #398d16 74%); */
+    /* --bg-btn: linear-gradient(357deg, #01750d 0%, #168d16 74%); */
+    --bg-color-cta-btn: transparent;
+    --color-cta-btn: #ffffff;
+    /* --bg-color-cta-btn-mask: rgb(105, 53, 222); */
+    /* --bg-color-cta-btn-mask: #435be0; */
+    /* --bg-color-cta-btn-mask: #179724; */
+    --bg-color-cta-btn-mask: #0a2fff;
+    --border-color-cta-btn: #673ab7;
+    --bg-color-feat-block-collapsed: #212121;
+    --color-feat-block: #212121;
+    --border-color-feat-block: #444444;
+    --bg-color-feat-icon: #3d0872;
+    --bg-color-feat-content-title: #ffffff;
+    /* --bg-color-faq-head: rgb(51 51 51 / 62%); */
+    /* --bg-color-faq-head: #1c0528; */
+    --bg-color-faq-head: #222230;
+    --bg-color-faq-collapsed-head: #1c1c1c;
+    /* --bg-color-faq-body: #1c0528; */
+    /* --bg-color-faq-body: #350c6e; */
+    --bg-color-faq-body: #2b2b3b;
+    --border-color-faq-head: #1b0c23;
+    --border-color-faq-collapsed-head: #191616;
+    --bg-color-prod-compare-item-mask: rgb(28 28 28 / 94%);
+    --bg-color-prod-compare-item-hover-mask: rgb(28 28 28 / 84%);
+    --border-color-prod-compare-wrap: #252525;
+    --bg-color-form-input: #1f212d;
+    /* --bg-color-navbar-feats: #0c0c0c; */
+    --bg-color-navbar-feats: #ebeef5;
+    /* --color-navbar-feat: #424242; */
+    --color-navbar-feat: #f7f7f7;
+    --bg-color-prod-item-box-wrap: #2c2b30;
+    --border-color-showcase-preview: #1a0927;
+    --bg-color-feat-block: transparent;
+    /* --bg-color-feat-img: #1b0427; */
+    --bg-color-feat-img: #d2bede;
+    --bg-color-feat-img-hover: #450881;
+    /* --bg-color-feat-title: #d8ccff; */
+    --bg-color-feat-title: #ffffff;
+    /* --color-testimonial-card: #f7f7f7;
+  --bg-color-testimonial-card-wrapper: #231c29;
+  --bg-color-testimonial-actions-wrapper: #292132; */
+    --color-testimonial-card: #fff;
+    --bg-color-testimonial-card-wrapper: #22222b;
+    --bg-color-testimonial-actions-wrapper: #2d2d3a;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        /* Keep comfortable side gutters on medium laptops (1200-1400px):
+       never let the container get closer than 60px to each edge.
+       At >=1400px this resolves to the original 1280px cap. */
+        max-width: min(1280px, calc(100vw - 120px)) !important;
+    }
+}
+
+@media (min-width: 1600px) {
+    .container {
+        max-width: 1300px !important;
+    }
+}
+
+@media (min-width: 1800px) {
+    .container {
+        max-width: 1440px !important;
+    }
+}
+
+/* For portrait - phone view (lower) */
+
+@media (max-width: 600px) and (orientation: portrait) {
+    :root {
+        --color-app-highlight: #f7f7f7;
+    }
+}
+
+.if-light-mode-on {
+    display: none !important;
+}
+
+.if-light-mode-off {
+    display: unset !important;
+}
+
+.lightMode .if-light-mode-on {
+    display: unset !important;
+}
+
+.lightMode .if-light-mode-off {
+    display: none !important;
+}

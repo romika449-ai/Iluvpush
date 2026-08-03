@@ -1,0 +1,292 @@
+/* feat showcase  */
+
+.section_wrap.section_wrap_showcase_wrap .titles_wrap {
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.section_wrap.section_wrap_showcase_wrap .titles_wrap .desc {
+    width: 100%;
+    text-align: left;
+}
+
+.content_wrap.content_wrap_showcase_wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start !important;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    overflow: visible;
+}
+
+.content_wrap_showcase_wrap .showcase_feats_wrap {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+    /* background-color: var(--color-app-primary); */
+    /* color: #000; */
+    color: #ffffff;
+    /* background-color: #220631; */
+    /* border-radius: 0; */
+    /* overflow: hidden; */
+    width: 400px;
+    /* box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06); */
+}
+
+.showcase_feats_wrap .showcase_feat {
+    padding: 20px;
+    padding-left: 23px;
+    /* background-color: #171717; */
+    /* margin-bottom: 1rem; */
+    /* border-radius: 4px; */
+    /* border-bottom: 1px solid #100217; */
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    border-radius: 8px;
+    color: var(--bg-color-feat-title);
+}
+
+.showcase_feat.collapsed,
+.showcase_feat.collapsed:hover {
+    color: white;
+    /* background-color: #7e30f3; */
+    /* background-color: #2339b1; */
+    background-color: #289319;
+    border: none;
+    box-shadow: inset 0 2px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.showcase_feat:hover {
+    /* background-color: var(--bg-color-feat-block-collapsed); */
+    background-color: #2a2d41;
+}
+
+.showcase_feat:first-of-type {
+    border-radius: 6px 6px 0 0;
+}
+
+.showcase_feat:last-of-type {
+    border: none;
+    border-radius: 0 0 6px 6px;
+}
+
+.showcase_feat.collapsed:after {
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 26px;
+    /* background-color: #7e30f3; */
+    /* background-color: #2339b1; */
+    background-color: #289319;
+    right: -10px;
+    top: 6px;
+    transform: rotate(46deg);
+    border-radius: 4px;
+}
+
+.showcase_feat .showcase_feat_head {
+    font-size: 18px;
+    /* font-weight: 400 !important; */
+    line-height: 1.2;
+    /* opacity: 0.8; */
+    /* letter-spacing: -0.5px; */
+    font-weight: 500;
+}
+
+.showcase_feat.collapsed .showcase_feat_head {
+    font-weight: 600 !important;
+    font-size: 18px;
+    opacity: 1;
+}
+
+.showcase_feat .showcase_feat_body {
+    height: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    letter-spacing: 0.4px;
+    display: none;
+}
+
+.showcase_feat.collapsed .showcase_feat_body {
+    height: auto;
+    padding: 15px 0;
+}
+
+.showcase_preview_wrap {
+    padding: 10px 0 10px 5%;
+    flex: 1;
+}
+
+.showcase_preview_wrap .showcase_preview {
+    width: 100%;
+    height: 550px;
+    box-shadow: 0 3px 47px rgba(0, 0, 0, 0.15);
+    border-radius: 18px;
+    border: 20px solid var(--border-color-showcase-preview);
+    background-repeat: no-repeat;
+    background-color: var(--border-color-showcase-preview);
+}
+
+.showcase_preview.multistreaming {
+    background-image: url(/assets/images/app_previews/destination-list.jpg);
+    background-size: 100% auto;
+}
+
+.showcase_preview.sync-facebook-streaming {
+    background-image: url(/assets/images/feature_showcase/sync-facebook.jpg);
+    background-size: 120% auto;
+    background-position: center 26%;
+}
+
+.showcase_preview.mp4-livestreaming {
+    background-image: url(/assets/images/feature_showcase/mp4-livestreaming.jpg);
+    background-size: auto 100%;
+    background-position: right;
+}
+
+.showcase_preview.advanced-scheduling {
+    background-image: url(/assets/images/feature_showcase/advanced-scheduling.jpg);
+    background-size: 115% auto;
+    background-position: center;
+}
+
+.showcase_preview.facebook-titles {
+    background-image: url(/assets/images/feature_showcase/facebook-titles.jpg);
+    background-size: auto 150%;
+    background-position: top left;
+}
+
+.showcase_preview.facebook-titles-assign {
+    background-image: url(/assets/images/feature_showcase/facebook-titles-assign.jpg);
+    background-size: 120% auto;
+    background-position: center -80px;
+}
+
+.showcase_preview.cloud-recordings {
+    background-image: url(/assets/images/feature_showcase/cloud-recording.jpg);
+    background-size: auto 110%;
+    background-position: top left;
+}
+
+.showcase_preview.realtime-monitoring {
+    background-image: url(/assets/images/feature_showcase/realtime-monitoring.jpg);
+    background-size: auto 110%;
+    background-position: top left;
+}
+
+.showcase_preview.publish-monitoring {
+    background-image: url(/assets/images/feature_showcase/publish-monitoring.jpg);
+    background-size: 100% auto;
+    background-position: 0 -46px;
+}
+
+.showcase_preview.session-statistics {
+    background-image: url(/assets/images/feature_showcase/session-statistics.jpg);
+    background-size: 150% auto;
+    background-position: top left;
+}
+
+.showcase_preview.weekly-events-schedule {
+    background-image: url(/assets/images/feature_showcase/weekly-events-list.jpg);
+    background-size: 100% auto;
+    background-position: 0 75%;
+}
+
+.showcase_preview.bulk-video-uploads {
+    background-image: url(/assets/images/feature_showcase/bulk-video-uploads.jpg);
+    background-size: 100% auto;
+    background-position: 0 12%;
+}
+
+.showcase_preview.teams {
+    background-image: url(/assets/images/feature_showcase/teams.jpg);
+    background-size: 110% auto;
+    background-position: 0 12%;
+}
+
+.showcase_preview.teams-members-roles {
+    background-image: url(/assets/images/feature_showcase/team-members-roles.jpg);
+    background-size: 110% auto;
+    background-position: 0 12%;
+}
+
+.showcase_preview.teams-members-invite {
+    background-image: url(/assets/images/feature_showcase/team-members-invite.jpg);
+    background-size: 110% auto;
+    background-position: 0 12%;
+}
+
+.showcase_preview.developer-api,
+.showcase_preview.dev-console-apps {
+    /* background-image: url(/assets/images/feature_showcase/dev-console-apps.jpg); */
+    background-image: url(/assets/images/feature_showcase/dev-console-app-manage.jpg);
+    background-size: auto 110%;
+    background-position: center;
+}
+
+.features-preload-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.features-preload-image {
+    display: block;
+    width: 1px;
+    height: 1px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.features-preload-image-live-source {
+    background-image: url('../../images/feature_showcase/livepush-live-source-auth.webp');
+}
+
+.features-preload-image-analytics {
+    background-image: url('../../images/feature_showcase/livepush-analytics-auth.webp');
+}
+
+.features-preload-image-pre-recorded {
+    background-image: url('../../images/feature_showcase/livepush-pre-recorded-auth.webp');
+}
+
+.features-preload-image-transcoder {
+    background-image: url('../../images/feature_showcase/livepush-transcoder-auth.webp');
+}
+
+.features-preload-image-video-editor {
+    background-image: url('../../images/feature_showcase/livepush-video-editor-auth.webp');
+}
+
+/* feat showcase -- ends */
+
+/* For Landscopa - Laptop view (medium) */
+
+@media only screen and (min-width: 820px) and (max-width: 1400px) {
+    .showcase_preview_wrap .showcase_preview {
+        height: 450px;
+    }
+    .showcase_feats_wrap .showcase_feat {
+        padding: 15px;
+        padding-left: 18px;
+    }
+    .showcase_feat .showcase_feat_head {
+        font-size: 17px;
+        font-weight: 400;
+    }
+}
+
+@media (max-width: 600px) and (orientation: portrait) {
+    .section_wrap.section_wrap_showcase_wrap {
+        display: none;
+    }
+}

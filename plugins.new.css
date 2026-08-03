@@ -1,0 +1,29 @@
+* {
+    scrollbar-width: thin;
+    scrollbar-color: unset;
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: unset;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    /* background: rgb(64 52 73); */
+    background: rgb(54 54 54);
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(156, 156, 156);
+}
+
+/* scrollbar styling */

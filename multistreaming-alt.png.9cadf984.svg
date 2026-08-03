@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128.009" height="125.533" viewBox="0 0 517 507">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f5e6fe;
+      }
+
+      .cls-2 {
+        stroke-width: 8.92px;
+        fill-rule: evenodd;
+        fill: url(#linear-gradient);
+        stroke: url(#linear-gradient-2);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="984.618" y1="414" x2="951.412" y2="729.938" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d594ff"/>
+      <stop offset="1" stop-color="#be64f9"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="981.835" y1="414" x2="954.195" y2="729.938" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d592ff"/>
+      <stop offset="1" stop-color="#be63f9"/>
+    </linearGradient>
+  </defs>
+  <rect id="Rounded_Rectangle_4" data-name="Rounded Rectangle 4" class="cls-1" width="517" height="507" rx="88" ry="88"/>
+  <path id="conn_2_copy" data-name="conn 2 copy" class="cls-2" d="M957.1,583.263c-1.77,26.854-7.244,76.993,9.879,87.807,6.913,4.366,20.645,2.96,31.614,2.96l39.519-.987c11.55-56.613,111.85-30.367,83.97,31.571-9.26,20.583-43.62,34.783-67.18,17.759-8.83-6.383-11.02-20.865-16.79-25.651H979.82c-10.93-3.006-19.941-3.2-27.662-8.88-27.747-20.4-17.786-93.242-17.783-140.1,0-36.672,8.951-87.907-36.553-75.968-9.6,47.959-98.767,39.389-87.927-17.759,5.118-26.979,37.251-52.289,68.168-33.544,13.775,8.351,12.319,26.867,33.59,27.624,64.675,16.7,34.963,51.145,45.445,113.459l81.012-.987c7.74-49.16,99.41-39.532,87.92,17.759-10.21,50.942-71.71,49.924-88.91,4.933H957.1Zm-103.734-147c-32.125,14.425-22.651,52.881,5.928,46.37C886.331,476.47,881.526,439.03,853.364,436.26ZM1075.65,549.719c-26.94,15.092-18.89,53.236,10.87,45.383C1112.01,588.377,1108.15,548.071,1075.65,549.719Zm0.99,112.472c-26.32,12.8-22.55,49.824,5.93,46.37C1111.34,705.071,1110.33,660.562,1076.64,662.191Z" transform="translate(-709 -318)"/>
+</svg>

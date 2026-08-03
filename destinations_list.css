@@ -1,0 +1,105 @@
+.content_wrap_sites_list {
+    width: unset !important;
+}
+
+.content_wrap .bg_vector_grid {
+    position: absolute;
+    z-index: 1;
+    bottom: -50px;
+    right: -103px;
+}
+
+.content_wrap .bg_vector_grid img {
+    width: 100%;
+}
+
+.streaming-sites-list {
+    display: flex;
+    z-index: 2;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background: #340065; */
+    border-radius: 8px;
+    max-width: 850px;
+    /* padding: 15px 10px; */
+}
+
+.streaming-sites-list .site {
+    padding: 10px 12px;
+    border-radius: 2px;
+    width: 194px;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+    border-radius: 8px;
+    justify-content: flex-start;
+    transition: background-color 0.15s ease;
+}
+
+.streaming-sites-list .site:hover {
+    background-color: #460b87;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);
+    transform: scale(1.1);
+}
+
+.site .site-img {
+    width: 48px;
+    height: auto;
+    border-radius: 3px;
+}
+
+.site .site-labels {
+    margin-left: 10px;
+}
+
+.site .site-labels label {
+    font-size: 14px;
+    display: block;
+    margin-top: 7px;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.site .site-labels .site-genre {
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+/* For portrait - phone view (lower) */
+
+@media (max-width: 600px) and (orientation: portrait) {
+    .streaming-sites-list {
+        width: 100% !important;
+        max-width: unset !important;
+    }
+    .streaming-sites-list .site {
+        padding: 8px 7px;
+        border-radius: 2px;
+        width: 145px;
+        margin-bottom: 8px;
+        margin-right: 8px;
+        border-radius: 4px;
+        transition: background-color 0.15s ease;
+        width: auto;
+    }
+    .site .site-img {
+        width: 36px;
+    }
+    .site .site-labels {
+        margin-left: 8px;
+    }
+    .site .site-labels label {
+        font-size: 12px;
+        display: none;
+    }
+    .site .site-labels .site-genre {
+        font-size: 11px;
+        display: none;
+    }
+    .section_layout_feature .content_wrap {
+        padding: 0 !important;
+    }
+}

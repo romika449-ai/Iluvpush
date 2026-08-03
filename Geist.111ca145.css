@@ -1,0 +1,33 @@
+@font-face {
+    font-family: Geist;
+    src: url(/Geist-Regular.828280dc.woff2) format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: Geist;
+    src: url(/Geist-Medium.aad1e5e2.woff2) format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: Geist;
+    src: url(/Geist-SemiBold.85b9f89c.woff2) format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: Geist;
+    src: url(/Geist-Bold.4466b6db.woff2) format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap
+}
+
+/*# sourceMappingURL=/Geist.111ca145.css.map */
